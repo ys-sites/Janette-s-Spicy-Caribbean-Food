@@ -55,7 +55,7 @@ export default function WhyChooseUs() {
           >
             <div className="aspect-square md:aspect-[4/3] lg:aspect-square rounded-3xl overflow-hidden shadow-2xl border border-white/10">
               <img 
-                src="/oxtail.jpeg" 
+                src="/oxtail.jpeg?v=1" 
                 alt="Fall-off-the-bone Jamaican Oxtail - Janette's Caribbean specialty in Roxboro"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

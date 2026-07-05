@@ -107,7 +107,7 @@ export default function Contact() {
             {/* Map Placeholder */}
             <div 
               className="absolute inset-0 bg-cover bg-center z-0"
-              style={{ backgroundImage: "url('/store.jpg')" }}
+              style={{ backgroundImage: "url('/store.jpg?v=1')" }}
               role="img"
               aria-label="Janette's Spicy Caribbean Food store front"
             />

@@ -11,7 +11,7 @@ export default function MapSection() {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: "url('/store.jpg')" }}
+        style={{ backgroundImage: "url('/store.jpg?v=1')" }}
       />
       <div className="absolute inset-0 bg-black/40 z-0" />
 

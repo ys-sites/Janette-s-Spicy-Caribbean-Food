@@ -22,7 +22,7 @@ export default function Hero() {
       <CateringPopup />
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center opacity-60"
-        style={{ backgroundImage: "url('/hero-bg.jpg'), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1920&q=80')" }}
+        style={{ backgroundImage: "url('/hero-bg.jpg?v=1'), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1920&q=80')" }}
         role="img"
         aria-label="Delicious Caribbean food spread"
       >
@@ -163,7 +163,7 @@ export default function Hero() {
             }}
           >
             <img 
-              src="/plate.jpeg" 
+              src="/plate.jpeg?v=1" 
               alt="Caribbean fish plate" 
               className="w-full h-40 object-cover rounded-2xl mb-4 group-hover:scale-105 transition-transform duration-500" 
               referrerPolicy="no-referrer"

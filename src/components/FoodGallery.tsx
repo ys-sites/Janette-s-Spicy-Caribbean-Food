@@ -5,47 +5,47 @@ import { useTranslation } from 'react-i18next';
 
 const galleryImages = [
   {
-    src: '/2.jpeg',
+    src: '/2.jpeg?v=1',
     altKey: 'foodGallery.items.wholeSnapperFeast',
     className: 'md:col-span-5 md:row-span-2',
   },
   {
-    src: '/3.jpeg',
+    src: '/3.jpeg?v=1',
     altKey: 'foodGallery.items.salmonInSauce',
     className: 'md:col-span-4 md:row-span-1',
   },
   {
-    src: '/4.jpeg',
+    src: '/4.jpeg?v=1',
     altKey: 'foodGallery.items.escovitchVegetables',
     className: 'md:col-span-3 md:row-span-1',
   },
   {
-    src: '/5.jpeg',
+    src: '/5.jpeg?v=1',
     altKey: 'foodGallery.items.plantainsAndDumplings',
     className: 'md:col-span-3 md:row-span-1',
   },
   {
-    src: '/6.jpeg',
+    src: '/6.jpeg?v=1',
     altKey: 'foodGallery.items.riceAndPeasTray',
     className: 'md:col-span-3 md:row-span-1',
   },
   {
-    src: '/7.jpeg',
+    src: '/7.jpeg?v=1',
     altKey: 'foodGallery.items.oxtailTray',
     className: 'md:col-span-3 md:row-span-1',
   },
   {
-    src: '/9.jpeg',
+    src: '/9.jpeg?v=1',
     altKey: 'foodGallery.items.steamedVegetables',
     className: 'md:col-span-3 md:row-span-1',
   },
   {
-    src: '/10.jpeg',
+    src: '/10.jpeg?v=1',
     altKey: 'foodGallery.items.curryChicken',
     className: 'md:col-span-6 md:row-span-1',
   },
   {
-    src: '/11.jpeg',
+    src: '/11.jpeg?v=1',
     altKey: 'foodGallery.items.goatCurry',
     className: 'md:col-span-6 md:row-span-1',
   },
