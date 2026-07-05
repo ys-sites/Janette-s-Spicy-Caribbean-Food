@@ -15,6 +15,7 @@ const videos: VideoItem[] = [
   { id: 4, src: '/this.mp4' },
   { id: 5, src: '/ig.mp4' },
   { id: 6, src: '/snaptik_7483615498056355127_v3.mp4' },
+  { id: 7, src: '/rip-guy-fieri.mp4' },
 ];
 
 const floatingImages = [
