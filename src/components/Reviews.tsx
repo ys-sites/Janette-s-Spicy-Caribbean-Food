@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Star, Quote, X } from 'lucide-react';
+import { Star, Quote } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const reviews = [
@@ -119,7 +119,6 @@ const reviews = [
 
 export default function Reviews() {
   const { t } = useTranslation();
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [isPaused, setIsPaused] = useState(false);
   // Duplicate the array to create a seamless loop
   const duplicatedReviews = [...reviews, ...reviews];
@@ -166,20 +165,6 @@ export default function Reviews() {
                 </div>
               </div>
               <p className="text-gray-600 text-sm md:text-base mb-4 relative z-10 flex-grow leading-relaxed font-medium">"{review.text}"</p>
-              
-              {review.reviewImage && (
-                <img 
-                  src={review.reviewImage} 
-                  alt={`Food from ${review.name}`} 
-                  className="w-full h-64 object-cover rounded-2xl mb-4 cursor-pointer hover:opacity-90 transition-opacity" 
-                  referrerPolicy="no-referrer"
-                  loading="lazy"
-                  onClick={() => {
-                    setSelectedImage(review.reviewImage);
-                    setIsPaused(true);
-                  }}
-                />
-              )}
 
               <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
                 <div className="flex text-[#F25C05]" aria-label={`${review.rating} out of 5 stars`}>
@@ -191,31 +176,6 @@ export default function Reviews() {
           ))}
         </div>
       </div>
-
-      {selectedImage && (
-        <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80" 
-          onClick={() => {
-            setSelectedImage(null);
-            setIsPaused(false);
-          }}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Image preview"
-        >
-          <button 
-            className="absolute top-4 right-4 text-white p-2 hover:bg-white/10 rounded-full transition-colors" 
-            onClick={() => {
-              setSelectedImage(null);
-              setIsPaused(false);
-            }}
-            aria-label="Close preview"
-          >
-            <X className="w-8 h-8" />
-          </button>
-          <img src={selectedImage} alt="Full view of Caribbean food" className="w-full h-full object-contain" referrerPolicy="no-referrer" />
-        </div>
-      )}
     </section>
   );
 }
