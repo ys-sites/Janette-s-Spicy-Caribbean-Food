@@ -11,7 +11,6 @@ export default function CateringSection() {
     name: '',
     email: '',
     phone: '',
-    eventDate: '',
     guests: '',
     message: '',
   });
@@ -41,7 +40,7 @@ export default function CateringSection() {
 
       if (response.ok) {
         setIsSuccess(true);
-        setFormData({ name: '', email: '', phone: '', eventDate: '', guests: '', message: '' });
+        setFormData({ name: '', email: '', phone: '', guests: '', message: '' });
       }
     } catch (error) {
       console.error(error);
@@ -234,40 +233,24 @@ export default function CateringSection() {
                       />
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <div>
-                        <label htmlFor="catering-date" className="block text-sm font-semibold text-gray-300 mb-2 uppercase tracking-wide">
-                          Event Date *
-                        </label>
-                        <input
-                          id="catering-date"
-                          type="date"
-                          name="eventDate"
-                          value={formData.eventDate}
-                          onChange={handleChange}
-                          required
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-colors text-sm"
-                        />
-                      </div>
-                      <div>
-                        <label htmlFor="catering-guests" className="block text-sm font-semibold text-gray-300 mb-2 uppercase tracking-wide">
-                          Number of Guests *
-                        </label>
-                        <select
-                          id="catering-guests"
-                          name="guests"
-                          value={formData.guests}
-                          onChange={handleChange}
-                          required
-                          className="w-full bg-[#2a2a2a] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-colors text-sm"
-                        >
-                          <option value="" disabled>Select range</option>
-                          <option value="10-25">10 – 25 guests</option>
-                          <option value="25-50">25 – 50 guests</option>
-                          <option value="50-100">50 – 100 guests</option>
-                          <option value="100+">100+ guests</option>
-                        </select>
-                      </div>
+                    <div>
+                      <label htmlFor="catering-guests" className="block text-sm font-semibold text-gray-300 mb-2 uppercase tracking-wide">
+                        Number of Guests *
+                      </label>
+                      <select
+                        id="catering-guests"
+                        name="guests"
+                        value={formData.guests}
+                        onChange={handleChange}
+                        required
+                        className="w-full bg-[#2a2a2a] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-colors text-sm"
+                      >
+                        <option value="" disabled>Select range</option>
+                        <option value="10-25">10 – 25 guests</option>
+                        <option value="25-50">25 – 50 guests</option>
+                        <option value="50-100">50 – 100 guests</option>
+                        <option value="100+">100+ guests</option>
+                      </select>
                     </div>
 
                     <div>
