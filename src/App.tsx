@@ -38,6 +38,9 @@ export default function App() {
       <main>
         <Hero />
         <Suspense fallback={<SectionSkeleton />}>
+          <SocialFeedback />
+        </Suspense>
+        <Suspense fallback={<SectionSkeleton />}>
           <About />
         </Suspense>
         <Suspense fallback={<SectionSkeleton />}>
@@ -54,9 +57,6 @@ export default function App() {
         </Suspense>
         <Suspense fallback={<SectionSkeleton />}>
           <Reviews />
-        </Suspense>
-        <Suspense fallback={<SectionSkeleton />}>
-          <SocialFeedback />
         </Suspense>
         <Suspense fallback={<SectionSkeleton />}>
           <Contact />
