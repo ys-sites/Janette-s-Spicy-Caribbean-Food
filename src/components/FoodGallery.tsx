@@ -155,7 +155,7 @@ export default function FoodGallery() {
   }, [selectedIndex]);
 
   return (
-    <section className="relative overflow-hidden bg-[#F4F1EA] py-24">
+    <section className="relative overflow-hidden bg-[#F4F1EA] py-16 md:py-24">
       <div className="absolute inset-0 opacity-60">
         <div className="absolute left-0 top-0 h-64 w-64 rounded-full bg-orange-300/30 blur-3xl" />
         <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-yellow-300/30 blur-3xl" />
@@ -167,7 +167,7 @@ export default function FoodGallery() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-4 font-bold uppercase tracking-[0.3em] text-[#F25C05]"
+            className="mb-4 font-bold uppercase tracking-[0.3em] text-[#F25C05] text-xs sm:text-sm"
           >
             {t('foodGallery.eyebrow')}
           </motion.p>
@@ -176,7 +176,7 @@ export default function FoodGallery() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.05 }}
-            className="mb-6 text-5xl font-display font-bold uppercase leading-[0.9] tracking-tight text-[#1A1A1A] md:text-7xl"
+            className="mb-6 text-4xl sm:text-5xl font-display font-bold uppercase leading-[0.9] tracking-tight text-[#1A1A1A] lg:text-7xl"
           >
             {t('foodGallery.title')}
           </motion.h2>
@@ -259,7 +259,7 @@ export default function FoodGallery() {
           </div>
         </div>
 
-        <div className="hidden grid-cols-1 gap-5 md:grid md:grid-cols-12 md:auto-rows-[220px]">
+        <div className="hidden grid-cols-1 gap-5 md:grid md:grid-cols-12 md:auto-rows-[160px] lg:auto-rows-[220px]">
           {galleryImages.map((image, index) => (
             <motion.figure
               key={image.src}

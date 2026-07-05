@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Calendar, ChefHat, Send } from 'lucide-react';
 import { useTranslation } from 'react-i18next';

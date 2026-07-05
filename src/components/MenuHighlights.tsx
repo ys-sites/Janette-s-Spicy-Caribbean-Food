@@ -57,14 +57,14 @@ export default function MenuHighlights() {
   const [activeCategory, setActiveCategory] = useState(menuCategories[0].title);
 
   return (
-    <section id="menu" className="py-24 bg-[#F4F1EA]">
+    <section id="menu" className="py-16 md:py-24 bg-[#F4F1EA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-6xl md:text-8xl font-display font-bold text-[#1A1A1A] mb-6 uppercase tracking-tight"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display font-bold text-[#1A1A1A] mb-6 uppercase tracking-tight"
           >
             {t('menu.title')}
           </motion.h2>
@@ -73,14 +73,14 @@ export default function MenuHighlights() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-lg md:text-xl text-gray-600 font-medium"
+            className="text-base md:text-lg text-gray-600 font-medium"
           >
             {t('menu.description')}
           </motion.p>
         </div>
 
         {/* Category Pills */}
-        <div className="flex flex-wrap justify-center gap-4 mb-16" role="tablist" aria-label="Menu categories">
+        <div className="flex flex-wrap justify-center gap-2.5 sm:gap-4 mb-16" role="tablist" aria-label="Menu categories">
           {menuCategories.map((category) => (
             <button
               key={category.title}
@@ -89,7 +89,7 @@ export default function MenuHighlights() {
               aria-controls={`panel-${category.title.replace(/\s+/g, '-').toLowerCase()}`}
               id={`tab-${category.title.replace(/\s+/g, '-').toLowerCase()}`}
               onClick={() => setActiveCategory(category.title)}
-              className={`px-8 py-3 rounded-full font-medium text-sm uppercase tracking-wider transition-all duration-300 ${
+              className={`px-5 py-2 sm:px-8 sm:py-3 rounded-full font-medium text-xs sm:text-sm uppercase tracking-wider transition-all duration-300 ${
                 activeCategory === category.title
                   ? 'bg-[#F25C05] text-white shadow-lg shadow-orange-500/30'
                   : 'bg-white text-gray-600 hover:bg-gray-100'
@@ -143,7 +143,7 @@ export default function MenuHighlights() {
         >
           <a 
             href="tel:+15146834741" 
-            className="inline-flex items-center gap-2 bg-[#F25C05] hover:bg-[#d95204] text-white px-10 py-5 rounded-full font-bold text-lg transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 uppercase tracking-wider"
+            className="inline-flex items-center gap-2 bg-[#F25C05] hover:bg-[#d95204] text-white px-6 py-3.5 sm:px-10 sm:py-5 rounded-full font-bold text-base sm:text-lg transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 uppercase tracking-wider"
             aria-label={`${t('menu.callToOrder')}: (514) 683-4741`}
           >
             {t('menu.callToOrder')}

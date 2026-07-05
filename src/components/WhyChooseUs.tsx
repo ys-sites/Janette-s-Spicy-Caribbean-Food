@@ -7,23 +7,23 @@ export default function WhyChooseUs() {
   const benefits: string[] = t('whyChooseUs.benefits', { returnObjects: true }) as string[];
 
   return (
-    <section className="py-24 bg-[#1A1A1A] text-white overflow-hidden relative">
+    <section className="py-16 md:py-24 bg-[#1A1A1A] text-white overflow-hidden relative">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-[#F25C05] font-bold tracking-widest uppercase text-sm mb-4">{t('whyChooseUs.title')}</h2>
-            <h3 className="text-6xl md:text-7xl font-display font-bold mb-8 leading-[0.9] uppercase tracking-tight">
+            <h2 className="text-[#F25C05] font-bold tracking-widest uppercase text-xs sm:text-sm mb-4">{t('whyChooseUs.title')}</h2>
+            <h3 className="text-4xl sm:text-5xl md:text-5xl lg:text-7xl font-display font-bold mb-8 leading-[0.9] uppercase tracking-tight">
               {t('whyChooseUs.subtitle').split(' ')[0]} {t('whyChooseUs.subtitle').split(' ')[1]} <span className="text-[#F25C05]">{t('whyChooseUs.subtitle').split(' ')[2]}</span>
             </h3>
-            <p className="text-gray-300 text-lg mb-10 font-medium leading-relaxed">
+            <p className="text-gray-300 text-base sm:text-lg mb-6 lg:mb-10 font-medium leading-relaxed">
               {t('whyChooseUs.description')}
             </p>
             

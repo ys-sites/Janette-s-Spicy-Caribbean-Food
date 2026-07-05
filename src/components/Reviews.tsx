@@ -124,14 +124,14 @@ export default function Reviews() {
   const duplicatedReviews = [...reviews, ...reviews];
 
   return (
-    <section id="reviews" className="py-24 bg-[#F4F1EA] overflow-hidden">
+    <section id="reviews" className="py-16 md:py-24 bg-[#F4F1EA] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center mb-16 gap-6">
           <div className="max-w-3xl">
-            <h2 className="text-gray-900 font-bold tracking-widest uppercase text-sm mb-4">
+            <h2 className="text-gray-900 font-bold tracking-widest uppercase text-xs sm:text-sm mb-4">
               {t('reviews.title')}
             </h2>
-            <h3 className="text-6xl md:text-8xl font-display font-bold text-[#1A1A1A] leading-tight uppercase tracking-tight">
+            <h3 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display font-bold text-[#1A1A1A] leading-tight uppercase tracking-tight">
               {t('reviews.subtitle').split(' ').slice(0, -1).join(' ')} <span className="text-[#F25C05]">{t('reviews.subtitle').split(' ').slice(-1)}</span>
             </h3>
           </div>
@@ -149,7 +149,7 @@ export default function Reviews() {
           {duplicatedReviews.map((review, index) => (
             <div 
               key={index} 
-              className="w-[350px] md:w-[450px] flex-shrink-0 bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col relative transition-transform duration-300 hover:-translate-y-2 hover:shadow-md"
+              className="w-[300px] sm:w-[340px] md:w-[380px] flex-shrink-0 bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col relative transition-transform duration-300 hover:-translate-y-2 hover:shadow-md"
             >
               <Quote className="absolute top-8 right-8 w-8 h-8 text-gray-200 fill-current" />
               <div className="flex items-center gap-4 mb-6">

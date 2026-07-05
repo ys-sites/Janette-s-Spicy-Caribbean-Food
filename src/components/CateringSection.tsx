@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { ChefHat, Calendar, Send, CheckCircle, Users, Clock, Phone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -71,7 +71,7 @@ export default function CateringSection() {
   ];
 
   return (
-    <section id="catering" className="py-24 bg-[#1A1A1A] overflow-hidden relative">
+    <section id="catering" className="py-16 md:py-24 bg-[#1A1A1A] overflow-hidden relative">
       {/* Background accents */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-orange-600/10 rounded-full blur-3xl" />
@@ -87,20 +87,20 @@ export default function CateringSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 text-orange-400 px-4 py-2 rounded-full text-sm font-semibold uppercase tracking-widest mb-6">
+          <div className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 text-orange-400 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold uppercase tracking-widest mb-6">
             <ChefHat className="w-4 h-4" />
             Catering Services
           </div>
-          <h2 className="text-5xl md:text-7xl font-display font-bold text-white mb-4 leading-[0.9] uppercase tracking-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-7xl font-display font-bold text-white mb-4 leading-[0.9] uppercase tracking-tight">
             BRING THE ISLANDS<br />
             <span className="text-orange-500">TO YOUR EVENT</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto font-medium">
+          <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto font-medium">
             Make your next event unforgettable with authentic Caribbean flavors. We offer full catering services every Tuesday and Wednesday.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Left: Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -151,7 +151,7 @@ export default function CateringSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm">
+            <div className="bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-8 backdrop-blur-sm">
               {isSuccess ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}

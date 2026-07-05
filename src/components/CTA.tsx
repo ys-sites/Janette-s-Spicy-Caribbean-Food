@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 export default function CTA() {
   const { t } = useTranslation();
   return (
-    <section className="py-32 bg-[#F25C05] relative overflow-hidden">
+    <section className="py-20 md:py-32 bg-[#F25C05] relative overflow-hidden">
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -24,24 +24,24 @@ export default function CTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold text-[#1A1A1A] mb-8 leading-[0.85] uppercase tracking-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display font-bold text-[#1A1A1A] mb-8 leading-[0.85] uppercase tracking-tight">
             {t('cta.title').split(' ').slice(0, -1).join(' ')} <br className="hidden md:block" />
             <span className="text-white">{t('cta.title').split(' ').slice(-1)}</span>
           </h2>
-          <p className="text-xl md:text-2xl text-[#1A1A1A] mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
+          <p className="text-lg md:text-xl text-[#1A1A1A] mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
             {t('cta.description')}
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <a href="tel:+15146834741" className="bg-[#1A1A1A] hover:bg-black text-white px-12 py-6 rounded-full font-bold text-xl transition-all transform hover:scale-105 shadow-2xl flex items-center gap-3 w-full sm:w-auto justify-center uppercase tracking-wider">
-              <Phone className="w-6 h-6" />
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
+            <a href="tel:+15146834741" className="bg-[#1A1A1A] hover:bg-black text-white px-8 py-4 sm:px-10 sm:py-5 rounded-full font-bold text-base sm:text-lg transition-all transform hover:scale-105 shadow-2xl flex items-center gap-3 w-full sm:w-auto justify-center uppercase tracking-wider">
+              <Phone className="w-5 h-5" />
               {t('cta.orderTakeout')}
             </a>
             <a 
               href="https://www.google.com/maps/search/?api=1&query=5B+Av.+3e+S,+Roxboro,+QC+H8Y+2L3" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-red-600 hover:bg-red-700 text-white px-12 py-6 rounded-full font-bold text-xl transition-all transform hover:scale-105 shadow-2xl flex items-center gap-3 w-full sm:w-auto justify-center uppercase tracking-wider"
+              className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 sm:px-10 sm:py-5 rounded-full font-bold text-base sm:text-lg transition-all transform hover:scale-105 shadow-2xl flex items-center gap-3 w-full sm:w-auto justify-center uppercase tracking-wider"
             >
               {t('cta.getDirections')}
             </a>

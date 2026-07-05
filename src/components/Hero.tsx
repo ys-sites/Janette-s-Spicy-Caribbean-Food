@@ -39,14 +39,14 @@ export default function Hero() {
           {/* SEO Optimized Hidden H1 */}
           <h1 className="sr-only">Janette's Spicy Caribbean Food - Authentic Takeout in Roxboro, QC</h1>
           
-          <div className="text-7xl md:text-8xl lg:text-[140px] font-display font-bold text-white mb-6 leading-[0.85] tracking-tight uppercase" aria-hidden="true">
+          <div className="text-5xl sm:text-6xl md:text-7xl lg:text-[100px] xl:text-[140px] font-display font-bold text-white mb-6 leading-[0.85] tracking-tight uppercase" aria-hidden="true">
             {t('hero.title').split(' ').slice(0, 2).join(' ')} <br />
             <span className="text-white">
               <span className="text-red-600">{t('hero.title').split(' ')[2]}</span> {t('hero.title').split(' ')[3]}
             </span>
           </div>
           
-          <p className="text-lg md:text-xl text-gray-300 mb-6 max-w-xl font-medium">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 max-w-xl font-medium">
             {t('hero.description')}
           </p>
 
@@ -72,10 +72,10 @@ export default function Hero() {
             </span>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
             <a 
               href="#menu" 
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 shadow-lg shadow-orange-600/20 uppercase tracking-wide"
+              className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all flex items-center justify-center gap-2 shadow-lg shadow-orange-600/20 uppercase tracking-wide"
               aria-label={t('hero.orderNow')}
             >
               {t('hero.orderNow')}
@@ -85,7 +85,7 @@ export default function Hero() {
               href="https://www.google.com/maps/search/?api=1&query=5B+Av.+3e+S,+Roxboro,+QC+H8Y+2L3" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="relative overflow-hidden text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 uppercase tracking-wide"
+              className="relative overflow-hidden text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all flex items-center justify-center gap-2 uppercase tracking-wide"
               style={{
                 background: 'linear-gradient(135deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.07) 100%)',
                 backdropFilter: 'blur(20px) saturate(160%)',
@@ -102,7 +102,7 @@ export default function Hero() {
               href="https://www.facebook.com/p/Janettes-Spicy-Caribbean-Food-100090978391538/"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative overflow-hidden w-16 h-16 font-bold text-lg transition-all flex items-center justify-center uppercase tracking-wide p-0"
+              className="relative overflow-hidden w-12 h-12 sm:w-16 sm:h-16 font-bold text-base sm:text-lg transition-all flex items-center justify-center uppercase tracking-wide p-0 shrink-0"
               aria-label="Follow us on Facebook"
               style={{
                 borderRadius: '22%',
@@ -114,7 +114,7 @@ export default function Hero() {
               }}
             >
               <div className="flex items-center justify-center w-full h-full">
-                <FacebookIcon className="w-10 h-10 text-[#c4410a]" />
+                <FacebookIcon className="w-8 h-8 sm:w-10 sm:h-10 text-[#c4410a]" />
               </div>
             </a>
           </div>

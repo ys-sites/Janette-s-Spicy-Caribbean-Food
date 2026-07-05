@@ -5,17 +5,17 @@ import { useTranslation } from 'react-i18next';
 export default function Contact() {
   const { t } = useTranslation();
   return (
-    <section id="contact" className="py-24 bg-white">
+    <section id="contact" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-gray-900 font-bold tracking-widest uppercase text-sm mb-4">{t('contact.title')}</h2>
-            <h3 className="text-6xl md:text-7xl font-display font-bold text-[#1A1A1A] mb-8 leading-[0.9] uppercase tracking-tight">
+            <h2 className="text-gray-900 font-bold tracking-widest uppercase text-xs sm:text-sm mb-4">{t('contact.title')}</h2>
+            <h3 className="text-4xl sm:text-5xl md:text-5xl lg:text-7xl font-display font-bold text-[#1A1A1A] mb-8 leading-[0.9] uppercase tracking-tight">
               {t('contact.subtitle').split(' ').slice(0, -1).join(' ')} <span className="text-[#F25C05]">{t('contact.subtitle').split(' ').slice(-1)}</span>
             </h3>
             
@@ -75,10 +75,10 @@ export default function Contact() {
               </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a 
                 href="tel:+15146834741" 
-                className="bg-[#F25C05] hover:bg-[#d95204] text-white px-8 py-4 rounded-full font-bold text-lg transition-colors text-center flex items-center justify-center gap-2 uppercase tracking-wider"
+                className="bg-[#F25C05] hover:bg-[#d95204] text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-colors text-center flex items-center justify-center gap-2 uppercase tracking-wider w-full sm:w-auto"
                 aria-label={`${t('contact.callRestaurant')}: (514) 683-4741`}
               >
                 <Phone className="w-5 h-5" />
@@ -88,7 +88,7 @@ export default function Contact() {
                 href="https://maps.google.com/?q=5B+Av.+3e+S,+Roxboro,+QC+H8Y+2L3" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="bg-gray-100 hover:bg-gray-200 text-[#1A1A1A] px-8 py-4 rounded-full font-bold text-lg transition-colors text-center flex items-center justify-center gap-2 uppercase tracking-wider"
+                className="bg-gray-100 hover:bg-gray-200 text-[#1A1A1A] px-6 py-3 sm:px-8 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-colors text-center flex items-center justify-center gap-2 uppercase tracking-wider w-full sm:w-auto"
                 aria-label={t('contact.getDirections')}
               >
                 <MapPin className="w-5 h-5" />
@@ -102,7 +102,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="h-[400px] lg:h-auto rounded-3xl overflow-hidden shadow-lg border border-gray-200 bg-gray-100 relative"
+            className="h-[400px] md:h-auto rounded-3xl overflow-hidden shadow-lg border border-gray-200 bg-gray-100 relative"
           >
             {/* Map Placeholder */}
             <div 

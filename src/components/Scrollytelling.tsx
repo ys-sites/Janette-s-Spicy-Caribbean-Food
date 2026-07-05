@@ -246,10 +246,10 @@ export default function Scrollytelling() {
             style={{ opacity: opacityA, y: yA }}
             className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 pointer-events-none z-30"
           >
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white/90 tracking-tighter mb-4">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold text-white/90 tracking-tighter mb-4">
               JANETTE'S
             </h1>
-            <p className="text-xl md:text-2xl text-white/60 max-w-2xl font-light tracking-wide">
+            <p className="text-lg sm:text-xl md:text-2xl text-white/60 max-w-2xl font-light tracking-wide">
               Authentic Spicy Caribbean Food
             </p>
           </motion.div>
@@ -259,10 +259,10 @@ export default function Scrollytelling() {
             style={{ opacity: opacityB, y: yB }}
             className="absolute inset-0 flex flex-col justify-center px-8 md:px-24 lg:px-32 pointer-events-none z-30"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-white/90 tracking-tight mb-4 max-w-3xl">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white/90 tracking-tight mb-4 max-w-3xl">
               AUTHENTIC<br />FLAVORS
             </h2>
-            <p className="text-lg md:text-xl text-white/60 max-w-xl font-light">
+            <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-xl font-light">
               Experience the true taste of the Caribbean. Every dish is prepared with passion, using traditional recipes and the freshest ingredients.
             </p>
           </motion.div>
@@ -272,10 +272,10 @@ export default function Scrollytelling() {
             style={{ opacity: opacityC, y: yC }}
             className="absolute inset-0 flex flex-col items-end justify-center text-right px-8 md:px-24 lg:px-32 pointer-events-none z-30"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-white/90 tracking-tight mb-4 max-w-3xl">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white/90 tracking-tight mb-4 max-w-3xl">
               SPICE IT<br />UP
             </h2>
-            <p className="text-lg md:text-xl text-white/60 max-w-xl font-light">
+            <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-xl font-light">
               From our signature jerk chicken to mouth-watering curries, we bring the heat and soul of island cooking straight to your plate.
             </p>
           </motion.div>
@@ -285,13 +285,13 @@ export default function Scrollytelling() {
             style={{ opacity: opacityD, y: yD }}
             className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 pointer-events-none z-30"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-white/90 tracking-tight mb-8">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white/90 tracking-tight mb-8">
               ORDER TAKEOUT
             </h2>
-            <p className="text-lg md:text-xl text-white/60 max-w-2xl font-light mb-12">
+            <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl font-light mb-12">
               Craving something delicious? Call us now to place your order and enjoy a taste of the Caribbean at home.
             </p>
-            <a href="tel:5146834741" className="pointer-events-auto px-8 py-4 bg-orange-600 text-white rounded-full font-medium tracking-wide hover:bg-orange-700 hover:scale-105 transition-all">
+            <a href="tel:5146834741" className="pointer-events-auto px-6 py-3 md:px-8 md:py-4 bg-orange-600 text-white rounded-full font-medium tracking-wide hover:bg-orange-700 hover:scale-105 transition-all text-base sm:text-lg">
               (514) 683-4741
             </a>
           </motion.div>
