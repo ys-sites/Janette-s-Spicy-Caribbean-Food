@@ -26,7 +26,7 @@ export default function MenuHighlights() {
         { name: t('menu.items.largeStewChicken'), price: "$18" },
         { name: t('menu.items.smallCurryGoat'), price: "$16" },
         { name: t('menu.items.largeCurryGoat'), price: "$19" },
-        { name: t('menu.items.oxtail'), price: "$21" },
+        { name: t('menu.items.oxtail'), price: "$22" },
       ]
     },
     {
@@ -41,9 +41,9 @@ export default function MenuHighlights() {
     {
       title: t('menu.categories.combos'),
       items: [
-        { name: t('menu.items.oxtailAndGoatCurry'), price: "$30" },
-        { name: t('menu.items.jerkChickenAndOxtail'), price: "$28" },
-        { name: t('menu.items.goatCurryAndJerkChicken'), price: "$28" },
+        { name: t('menu.items.oxtailAndGoatCurry'), price: "$31" },
+        { name: t('menu.items.jerkChickenAndOxtail'), price: "$29" },
+        { name: t('menu.items.goatCurryAndJerkChicken'), price: "$29" },
       ]
     },
     {

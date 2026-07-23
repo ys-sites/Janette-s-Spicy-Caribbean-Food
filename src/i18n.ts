@@ -70,7 +70,7 @@ const resources = {
           beefRoti: 'Beef Roti',
           veggieRoti: 'Veggie Roti',
           oxtailAndGoatCurry: 'Oxtail & Goat Curry',
-          jerkChickenAndOxtail: 'Jerk Chicken & Oxtail',
+          jerkChickenAndOxtail: 'Oxtail & Jerk Chicken',
           goatCurryAndJerkChicken: 'Goat Curry & Jerk Chicken',
           drink: 'Drink',
         }
@@ -235,7 +235,7 @@ const resources = {
           beefRoti: 'Roti au Bœuf',
           veggieRoti: 'Roti aux Légumes',
           oxtailAndGoatCurry: 'Queue de Bœuf & Curry de Chèvre',
-          jerkChickenAndOxtail: 'Poulet Jerk & Queue de Bœuf',
+          jerkChickenAndOxtail: 'Queue de Bœuf & Poulet Jerk',
           goatCurryAndJerkChicken: 'Curry de Chèvre & Poulet Jerk',
           drink: 'Boisson',
         }
